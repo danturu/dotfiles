@@ -63,6 +63,7 @@ if has("autocmd")
   autocmd BufRead,BufNewFile *.scss          set filetype=scss       autoread
   autocmd BufRead,BufNewFile *.coffee        set filetype=coffee     autoread
   autocmd BufRead,BufNewFile *.js            set filetype=javascript autoread
+  autocmd BufRead,BufNewFile *.es6           set filetype=javascript autoread
 
   " Automatically remove all trailing whitespace before saving.
 
