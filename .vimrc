@@ -5,7 +5,7 @@ set encoding=utf-8
 
 let mapleader = ","
 let maplocalleader = ","
-
+"
 " Make tab completion act like bash.
 
 set wildmenu
@@ -64,6 +64,7 @@ if has("autocmd")
   autocmd BufRead,BufNewFile *.coffee        set filetype=coffee     autoread
   autocmd BufRead,BufNewFile *.js            set filetype=javascript autoread
   autocmd BufRead,BufNewFile *.es6           set filetype=javascript autoread
+  autocmd BufNewFile,BufReadPost *.mjml      set filetype=html
 
   " Automatically remove all trailing whitespace before saving.
 
